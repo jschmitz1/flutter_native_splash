@@ -200,7 +200,7 @@ void _saveImageiOS({
     image,
     width: image.width * template.pixelDensity ~/ 4,
     height: image.height * template.pixelDensity ~/ 4,
-    interpolation: Interpolation.cubic,
+    interpolation: Interpolation.linear,
   );
 
   final file = File(targetPath + template.fileName);
